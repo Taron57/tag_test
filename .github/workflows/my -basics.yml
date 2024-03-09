@@ -4,6 +4,7 @@ name: MY_GitHubAction
 env:
   APPLICATION_NAME   : "MyFlask"
   DEPLOY_PACKAGE_NAME: "flask-deploy-ver-${{ github.sha}}
+  
 on:
   push:
     branches: 
@@ -16,6 +17,7 @@ jobs:
     steps:
     - name: Print Hello MEssage
       run : echo "Hello World from Testing job"
+
 
     - name: Execute few commands
       run : |
